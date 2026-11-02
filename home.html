@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeFlow - Save life</title>
+    <link rel="shortcut icon" href="Red Rounded Heart Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="blood self.css">
+</head>
+<body class="body">
+
+    <nav class="navbar">
+
+        <div class="app-logo">
+               <a href="index.html"><span class="app-logo-p1">♥</span></a>
+               <span class="app-logo-p2">LifeFlow</span>
+        </div>
+
+        
+<div class="nav-buttons">
+    <a href="index.html"><button class="home">Home</button></a>
+    <a href="donation camp.html"><button class="appointment">Book Appointment</button></a>
+    <a href="criteria.html"><button class="donation">Donation Criteria</button></a>
+    <a href="contact.html"><button class="contact">Contact Us</button></a>
+</div>
+
+     
+    </nav>
+
+                <div class="content-div-1">
+            <p class="content-1t1"><b>● Community blood donation</b></p>
+            <p class="content-1t2"><b>One appointment.<br><span class="content-1t2-sub">A life saved.</span></b></p>
+            <p class="content-1t3">Find nearby donation drives, check your basic eligibility,
+                 reserve a time slot, and view blood-bank reserve levels — all in one simple platform.</p>
+            
+            <a href="donation camp.html"><button class="content-1t4"><b>Find a donation camp →</b></button></a>
+            <!-- Click triggers the popup card -->
+            <button class="content-1t5" onclick="toggleEligibilityCard()"><b>Check eligibility</b></button>
+
+            <!-- Popup Eligibility Card (Hidden by default) -->
+            <div id="eligibilityModal" class="eligibility-modal">
+                <div class="eligibility-card">
+                    <span class="close-btn" onclick="toggleEligibilityCard()">&times;</span>
+                    <h4 class="card-title">Check Your Eligibility</h4>
+                    <div class="input-group">
+                        <input type="number" id="userAge" placeholder="Age (Years)">
+                        <input type="number" id="userWeight" placeholder="Weight (kg)">
+                    </div>
+                    <button class="check-submit-btn" onclick="checkEligibility()"><b>Verify</b></button>
+                    <p id="resultMessage"></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="content-div-2">
+
+            <div>
+                <p class="content-2t1"><b>Upcoming donations </b></p>
+            </div>
+
+            <div>
+
+                <div class="content-2-camp-1">
+                    <p class="content-1t2-1"><b>CAMP-1</b></p>
+                    <p class="content-1t2-2">14-10-26</p>
+                    <p class="content-1t2-3"><b>Mansarovar,<br>Jaipur</b></p>
+                    <a href="donation camp.html"><button class="content-1t2-4"><b>JOIN</b></button></a>
+                </div>
+
+                <div class="content-2-camp-2">
+                    <p class="content-2t2-1"><b>CAMP-2</b></p>
+                    <p class="content-2t2-2">19-10-26</p>
+                    <p class="content-2t2-3"><b>Shastri Nagar,Jaipur</b></p>
+                    <a href="donation camp.html"><button class="content-2t2-4"><b>JOIN</b></button></a>
+                </div>
+
+                <div class="content-2-camp-3">
+                    <p class="content-2t2-1"><b>CAMP-3</b></p>
+                    <p class="content-2t2-2">24-10-26</p>
+                    <p class="content-2t2-3"><b>Vaishali Nagar,Jaipur</b></p>
+                    <a href="donation camp.html"><button class="content-2t2-4"><b>JOIN</b></button></a>
+                    
+                </div>
+
+            </div>
+
+        </div>
+            <p class="overview"><b>Quick overview</b></p>
+            <p class="overview-sub">Everything you need before your donation.</p>
+
+        <div>
+
+            <div class="overview-div-1">
+                <p class="view-1-1"><b>01</b></p>
+                <p class="view-1-2">Upcoming camps</p>
+                <p class="view-1-3">Browse venues, organizers, dates and available appointment slots.</p>
+                <a href="donation camp.html"><button class="view-1-4"><b>Explore Camps</b></button></a>
+            </div>
+
+            <div class="overview-div-1">
+                <p class="view-1-1"><b>02</b></p>
+                <p class="view-1-2">Basic eligibility</p>
+                <p class="view-1-3">Use the pre-screening tool to check the project’s specified criteria</p>
+                <button class="view-2-4" onclick="toggleEligibilityCard()"><b>Check Now</b></button>
+            </div>
+
+            <div class="overview-div-1">
+                <p class="view-1-1"><b>03</b></p>
+                <p class="view-1-2">Blood reserves</p>
+                <p class="view-1-3">See sample reserve levels for A+, B+, O+, AB+ and O−.</p>
+                <a href="blood reserves.html"><button class="view-3-4"><b>View Inventory</b></button></a>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+
+</body>
+</html>

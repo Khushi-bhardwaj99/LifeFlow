@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blood self.css">
@@ -20,9 +21,11 @@
         <div class="nav-buttons">
             <a href="index.html"><button class="home">Home</button></a>
             <a href="donation camp.html"><button class="appointment">Book Appointment</button></a>
-            <button class="donation">Donation Criteria</button>
+            <a href="criteria.html"><button class="donation">Donation Criteria</button></a>
             <a href="contact.html"><button class="contact">Contact Us</button></a>
         </div>
+            
+
      
     </nav>
 
@@ -59,26 +62,35 @@
 
     </div>
 
-    <div class="contact-2">
+        <div class="contact-2">
 
         <p class="contact-1-info"><b>Send us a message</b></p>
         <p class="contact-1-sub">Fill out the form below and we'll get back to you <br>as soon as possible.</p>
 
-        <p class="c2-name"><b>Name:</b></p>
-        <input type="text" class="input-1" placeholder=" Enter your name">
+        <!-- this form tag will trigger your js code -->
+        <form id="contactForm" onsubmit="validateContactForm(event)">
+            <p class="c2-name"><b>Name:</b></p>
+            <input type="text" id="contactName" class="input-1" placeholder=" Enter your name">
 
-        <p class="c2-name"><b>Email:</b></p>
-        <input type="text" class="input-1" placeholder=" Enter your email">
+            <p class="c2-name"><b>Email:</b></p>
+            <input type="email" id="contactEmail" class="input-1" placeholder=" Enter your email">
 
-        <p class="c2-name"><b>Subject:</b></p>
-        <input type="text" class="input-1" placeholder=" Enter your subject">
+            <p class="c2-name"><b>Subject:</b></p>
+            <input type="text" id="contactSubject" class="input-1" placeholder=" Enter your subject">
 
-        <p class="c2-name"><b>Message:</b></p>
-        <textarea name="" id="" class="textarea-1">Write your message here...</textarea>
+            <p class="c2-name"><b>Message:</b></p>
+            <textarea id="contactMessage" class="textarea-1" placeholder="Write your message here..."></textarea>
 
-        <button class="send">Send</button
+            
+            <button type="submit" class="send">Send</button>
+            
+            
+            <p id="formStatusMessage" style="margin-top: 15px; font-weight: bold; font-family: sans-serif;"></p>
+        </form>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

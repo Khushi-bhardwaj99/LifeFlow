@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blood self.css">
@@ -15,12 +16,23 @@
                <span class="app-logo-p2">LifeFlow</span>
         </div>
 
-        <div class="nav-buttons">
-            <a href="index.html"><button class="home">Home</button></a>
-            <a href="donation camp.html"><button class="appointment">Book Appointment</button></a>
-            <button class="donation">Donation Criteria</button>
-            <a href="contact.html"><button class="contact">Contact Us</button></a>
+        
+          <div class="nav-buttons">
+               <a href="index.html"><button class="home">Home</button></a>
+           
+               <a href="donation camp.html">
+                   <button class="appointment">Book Appointment</button>
+               </a>
+           
+               <a href="criteria.html">
+                   <button class="donation">Donation Criteria</button>
+               </a>
+           
+               <a href="contact.html">
+                   <button class="contact">Contact Us</button>
+               </a>
         </div>
+
      
     </nav>
 
@@ -34,11 +46,20 @@
         <p class="search-d"><b>Date</b></p>
         <p class="search-o"><b>Organizer</b></p>
 
-        <input type="text" id="location" placeholder=" Enter city or area" class="search-1">
-        <input type="date" id="date" placeholder=" Choose suitable date" class="search-2">
-        <select name="" id="" class="search-2"><option>All organizers</option><option>Red Cross Society</option>
-            <option>Seva Foundation</option><option>LifeLine Foundation</option></select>
-            <button class="search-comp">Search</button>
+        
+        <input type="text" id="location" placeholder="Enter city or area" class="search-1">
+        
+        <input type="date" id="date" class="search-2">
+        
+        <select id="organizer" class="search-2">
+            <option value="All organizers">All organizers</option>
+            <option value="Red Cross Society">Red Cross Society</option>
+            <option value="Seva Foundation">Seva Foundation</option>
+            <option value="LifeLine Foundation">LifeLine Foundation</option>
+        </select>
+        
+        <button class="search-comp" onclick="searchCamps()">Search</button>
+
 
     </div>
 
@@ -54,7 +75,8 @@
         <p class="camp-a-head">City Hospital Blood Drive</p>
         <p class="camp-a-main">Mansarovar, Jaipur | NGO: Red Cross Society | 9:00 AM – 4:00 PM</p>
         <p class="camp-a-foot">18 slots available</p>
-        <button class="camp-a-button">Book Now →</button>
+        <a href="reservation.html"><button class="camp-a-button">Book Now</button></a>
+        
         </div>
 
     </div>
@@ -69,7 +91,7 @@
         <p class="camp-a-head">Community Care Camp</p>
         <p class="camp-a-main">Shastri Nagar, Jaipur | NGO: Seva Foundation | 10:00 AM – 3:00 PM</p>
         <p class="camp-a-foot">9 slots available</p>
-        <button class="camp-a-button">Book Now →</button>
+        <a href="reservation.html"><button class="camp-a-button">Book Now</button></a>
         </div>
 
     </div>
@@ -84,7 +106,8 @@
         <p class="camp-a-head">Life Saver Donation Drive</p>
         <p class="camp-a-main">Vaishali Nagar, Jaipur | NGO: LifeLine Foundation | 9:00 AM – 5:00 PM</p>
         <p class="camp-a-foot">24 slots available</p>
-        <button class="camp-a-button">Book Now →</button>
+        <a href="reservation.html"><button class="camp-a-button">Book Now</button></a>
+        
         </div>
 
     </div>
@@ -100,6 +123,7 @@
     </div>
 
 </section>
+<script src="script.js"></script>
 
 </body>
 </html>
